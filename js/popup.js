@@ -7,9 +7,12 @@ $(document).ready(function() {
 
   parsedItems.forEach(function(item){
     $("#list").append(
-      $('<li/>').append(
-        $('<a/>').attr("href", base_url + item.url).attr("target","_blank").html(item.name)
+      $('<tr>').append(
+        $('<td>').html(item.star).addClass("star")).append(
+        $('<td>').addClass("title").attr("nowrap",'').append(
+          $('<a/>').attr("href", base_url + item.url).attr("target","_blank").html(item.name)
+          )
         )
-      );
+      )
   });
 });
