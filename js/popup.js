@@ -8,11 +8,11 @@ $(document).ready(function() {
   parsedItems.forEach(function(item){
     $("#list").append(
       $('<tr>').append(
-        $('<td>').html(item.star).addClass("star")).append(
         $('<td>').addClass("title").attr("nowrap",'').append(
           $('<a/>').attr("href", base_url + item.url).attr("target","_blank").html(item.name)
           )
-        )
+        ).append(
+        $('<td>').html("★ " + item.star).attr("nowrap",'').addClass("star"))
       )
   });
 });
