@@ -1,0 +1,27 @@
+#repo_count {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  color: #222;
+  padding-left: 10px;
+}
+
+#repo_count span{
+  font-size: 16px;
+  color: #999;
+  font-weight: normal;
+}
+
+#list {
+  list-style: none;
+  padding-left: 10px;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+}
+

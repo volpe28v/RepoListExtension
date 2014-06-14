@@ -3,6 +3,8 @@ var base_url = "https://github.com";
 
 // Popupにリストを生成する
 $(document).ready(function() {
+  $('#repo_count').html(parsedItems.length + " ").append($('<span>').html("repos"));
+
   parsedItems.forEach(function(item){
     $("#list").append(
       $('<li/>').append(
