@@ -10,7 +10,7 @@ $.get(repo_url, function(data) {
     var title = $(repo).find(".repolist-name a");
     var url = $(title).attr("href");
     var name = $(title).text();
-    var star = Number($(repo).find(".stargazers").text());
+    var star = Number($(repo).find(".stargazers").text().replace(",",''));
     return {url: url, name: name, star: star};
   });
 
